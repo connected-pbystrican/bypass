@@ -17,7 +17,7 @@
 {
   self = [super init];
   if (self) {
-    CGFloat systemFontSize = [UIFont systemFontSize];
+    CGFloat systemFontSize = [[UIFont preferredFontForTextStyle:UIFontTextStyleBody] pointSize];
 
     self.defaultFont = [UIFont systemFontOfSize:systemFontSize];
     self.boldFont = [UIFont boldSystemFontOfSize:systemFontSize];

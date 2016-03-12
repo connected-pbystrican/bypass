@@ -31,6 +31,23 @@
 		5E5BC89C16E79B6200165503 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC89816E79B6200165503 /* parser.cpp */; };
 		5E5BC8A116E7BE9400165503 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5BC8A016E7BE9400165503 /* CoreText.framework */; };
 		6BE4F72716F0E9D100670C16 /* BPMarkdownPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F72616F0E9D100670C16 /* BPMarkdownPageView.m */; };
+		BE872E541C94754E002263CA /* BPParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC85216E0066E00165503 /* BPParser.mm */; };
+		BE872E551C94754E002263CA /* BPDocument.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC87216E0083D00165503 /* BPDocument.mm */; };
+		BE872E561C94754E002263CA /* BPElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC87516E0085000165503 /* BPElement.mm */; };
+		BE872E571C94754E002263CA /* BPAttributedStringConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC88616E15C5800165503 /* BPAttributedStringConverter.m */; };
+		BE872E581C94754E002263CA /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC88B16E79B2E00165503 /* array.c */; };
+		BE872E591C94754E002263CA /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC88D16E79B2E00165503 /* buffer.c */; };
+		BE872E5A1C94754E002263CA /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC88F16E79B2E00165503 /* markdown.c */; };
+		BE872E5B1C94754E002263CA /* document.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC89416E79B6200165503 /* document.cpp */; };
+		BE872E5C1C94754E002263CA /* element.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC89616E79B6200165503 /* element.cpp */; };
+		BE872E5D1C94754E002263CA /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BC89816E79B6200165503 /* parser.cpp */; };
+		BE872E5E1C94754E002263CA /* BPMarkdownPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F72616F0E9D100670C16 /* BPMarkdownPageView.m */; };
+		BE872E5F1C94754E002263CA /* BPMarkdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E007AEA16FA17D100F8CFFD /* BPMarkdownView.m */; };
+		BE872E601C94754E002263CA /* BPDisplaySettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D9DE2F0735C1CEB3500EFF /* BPDisplaySettings.m */; };
+		BE872E621C94754E002263CA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5BC8A016E7BE9400165503 /* CoreText.framework */; };
+		BE872E631C94754E002263CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5BC84F16E005E700165503 /* UIKit.framework */; };
+		BE872E641C94754E002263CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5BC81B16E004FA00165503 /* Foundation.framework */; };
+		BE872E661C94754E002263CA /* Bypass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5BC82016E004FA00165503 /* Bypass.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +68,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				5E5BC82116E004FA00165503 /* Bypass.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE872E651C94754E002263CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				BE872E661C94754E002263CA /* Bypass.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +125,7 @@
 		5E5BC8A016E7BE9400165503 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		6BE4F72516F0E9D100670C16 /* BPMarkdownPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMarkdownPageView.h; sourceTree = "<group>"; };
 		6BE4F72616F0E9D100670C16 /* BPMarkdownPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPMarkdownPageView.m; sourceTree = "<group>"; };
+		BE872E6A1C94754E002263CA /* libBypassTVOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBypassTVOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +149,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE872E611C94754E002263CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE872E621C94754E002263CA /* CoreText.framework in Frameworks */,
+				BE872E631C94754E002263CA /* UIKit.framework in Frameworks */,
+				BE872E641C94754E002263CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -139,6 +177,7 @@
 			children = (
 				5E5BC81816E004FA00165503 /* libBypass.a */,
 				5E5BC82916E004FA00165503 /* BypassTests.octest */,
+				BE872E6A1C94754E002263CA /* libBypassTVOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,7 +327,24 @@
 			name = BypassTests;
 			productName = BypassTests;
 			productReference = 5E5BC82916E004FA00165503 /* BypassTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
+		};
+		BE872E521C94754E002263CA /* BypassTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE872E671C94754E002263CA /* Build configuration list for PBXNativeTarget "BypassTVOS" */;
+			buildPhases = (
+				BE872E531C94754E002263CA /* Sources */,
+				BE872E611C94754E002263CA /* Frameworks */,
+				BE872E651C94754E002263CA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BypassTVOS;
+			productName = Bypass;
+			productReference = BE872E6A1C94754E002263CA /* libBypassTVOS.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -296,6 +352,7 @@
 		5E5BC81016E004FA00165503 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0720;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Uncodin;
 			};
@@ -313,6 +370,7 @@
 			targets = (
 				5E5BC81716E004FA00165503 /* Bypass */,
 				5E5BC82816E004FA00165503 /* BypassTests */,
+				BE872E521C94754E002263CA /* BypassTVOS */,
 			);
 		};
 /* End PBXProject section */
@@ -372,6 +430,26 @@
 				5E5BC87B16E11F7300165503 /* BPElementTests.mm in Sources */,
 				5E5BC87F16E134C200165503 /* BPDocumentTests.mm in Sources */,
 				5E5BC88216E1448C00165503 /* BPParserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE872E531C94754E002263CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE872E541C94754E002263CA /* BPParser.mm in Sources */,
+				BE872E551C94754E002263CA /* BPDocument.mm in Sources */,
+				BE872E561C94754E002263CA /* BPElement.mm in Sources */,
+				BE872E571C94754E002263CA /* BPAttributedStringConverter.m in Sources */,
+				BE872E581C94754E002263CA /* array.c in Sources */,
+				BE872E591C94754E002263CA /* buffer.c in Sources */,
+				BE872E5A1C94754E002263CA /* markdown.c in Sources */,
+				BE872E5B1C94754E002263CA /* document.cpp in Sources */,
+				BE872E5C1C94754E002263CA /* element.cpp in Sources */,
+				BE872E5D1C94754E002263CA /* parser.cpp in Sources */,
+				BE872E5E1C94754E002263CA /* BPMarkdownPageView.m in Sources */,
+				BE872E5F1C94754E002263CA /* BPMarkdownView.m in Sources */,
+				BE872E601C94754E002263CA /* BPDisplaySettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +588,38 @@
 			};
 			name = Release;
 		};
+		BE872E681C94754E002263CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BOOST_HOME = /usr/local/include;
+				DSTROOT = /tmp/Bypass.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bypass/Bypass-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BOOST_HOME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos9.1;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BE872E691C94754E002263CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BOOST_HOME = /usr/local/include;
+				DSTROOT = /tmp/Bypass.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bypass/Bypass-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BOOST_HOME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos9.1;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,6 +646,15 @@
 			buildConfigurations = (
 				5E5BC84116E004FA00165503 /* Debug */,
 				5E5BC84216E004FA00165503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE872E671C94754E002263CA /* Build configuration list for PBXNativeTarget "BypassTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE872E681C94754E002263CA /* Debug */,
+				BE872E691C94754E002263CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
