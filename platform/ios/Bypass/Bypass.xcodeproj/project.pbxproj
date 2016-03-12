@@ -48,6 +48,13 @@
 		BE872E631C94754E002263CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5BC84F16E005E700165503 /* UIKit.framework */; };
 		BE872E641C94754E002263CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5BC81B16E004FA00165503 /* Foundation.framework */; };
 		BE872E661C94754E002263CA /* Bypass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5BC82016E004FA00165503 /* Bypass.h */; };
+		BE8743141C948604002263CA /* BPAttributedStringConverter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5BC88516E15C5800165503 /* BPAttributedStringConverter.h */; };
+		BE8743151C948629002263CA /* BPParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5BC85116E0066E00165503 /* BPParser.h */; };
+		BE8743161C948629002263CA /* BPDocument.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5BC87116E0083D00165503 /* BPDocument.h */; };
+		BE8743171C948629002263CA /* BPElement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5BC87416E0085000165503 /* BPElement.h */; };
+		BE8743181C948629002263CA /* BPDisplaySettings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58D9D454C9F2BD2E7F81B4B8 /* BPDisplaySettings.h */; };
+		BE8743191C948629002263CA /* BPMarkdownView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E007AE916FA17D100F8CFFD /* BPMarkdownView.h */; };
+		BE87431A1C948629002263CA /* BPMarkdownPageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6BE4F72516F0E9D100670C16 /* BPMarkdownPageView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +84,13 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				BE8743151C948629002263CA /* BPParser.h in CopyFiles */,
+				BE8743161C948629002263CA /* BPDocument.h in CopyFiles */,
+				BE8743171C948629002263CA /* BPElement.h in CopyFiles */,
+				BE8743181C948629002263CA /* BPDisplaySettings.h in CopyFiles */,
+				BE8743191C948629002263CA /* BPMarkdownView.h in CopyFiles */,
+				BE87431A1C948629002263CA /* BPMarkdownPageView.h in CopyFiles */,
+				BE8743141C948604002263CA /* BPAttributedStringConverter.h in CopyFiles */,
 				BE872E661C94754E002263CA /* Bypass.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,12 +605,17 @@
 		BE872E681C94754E002263CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BOOST_HOME = /usr/local/include;
 				DSTROOT = /tmp/Bypass.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bypass/Bypass-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(BOOST_HOME)";
+				HEADER_SEARCH_PATHS = /usr/local/bin/boost;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/bin/boost/stage/lib,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos9.1;
@@ -607,12 +626,17 @@
 		BE872E691C94754E002263CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BOOST_HOME = /usr/local/include;
 				DSTROOT = /tmp/Bypass.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bypass/Bypass-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(BOOST_HOME)";
+				HEADER_SEARCH_PATHS = /usr/local/bin/boost;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/bin/boost/stage/lib,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos9.1;

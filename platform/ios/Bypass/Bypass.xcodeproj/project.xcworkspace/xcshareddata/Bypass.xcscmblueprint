@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "25B61C227B7437DD6601AE8DDC530911883202A5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CF38CE810BDC77BB3FDC937FFFBE3A6B6B22F3B1" : 0,
+    "25B61C227B7437DD6601AE8DDC530911883202A5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ED3C5056-757F-4B8D-B373-3B37CDA0B7D3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CF38CE810BDC77BB3FDC937FFFBE3A6B6B22F3B1" : "..",
+    "25B61C227B7437DD6601AE8DDC530911883202A5" : "bypass\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Bypass",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "platform\/ios\/Bypass\/Bypass.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Uncodin\/bypass.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "25B61C227B7437DD6601AE8DDC530911883202A5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:connected-lab\/alexa-office-assistant.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CF38CE810BDC77BB3FDC937FFFBE3A6B6B22F3B1"
+    }
+  ]
+}
